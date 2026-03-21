@@ -1,0 +1,15 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Synergy.Admin.Web", "Synergy.Admin.Web", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
+EndProject
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FDDEE25-FB08-4A5E-BEDB-DBF605F4D5FD}
+	EndGlobalSection
+EndGlobal

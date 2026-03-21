@@ -1,0 +1,155 @@
+/* ============================================
+   Synergy Admin - Design System
+   Stripe + Vercel + Notion | Azul claro + Branco
+   ============================================ */
+
+:root,
+[data-theme="light"] {
+  /* === Cores principais === */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-primary-light: #dbeafe;
+
+  /* === Fundos === */
+  --color-background: #f6f9fc;
+  --color-surface: #ffffff;
+  --color-sidebar: #eff6ff;
+
+  /* === Texto === */
+  --color-text: #1e293b;
+  --color-text-secondary: #64748b;
+
+  /* === Bordas === */
+  --color-border: rgba(0, 0, 0, 0.06);
+
+  /* === Espaçamento (4px base) === */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* === Bordas e sombras === */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+  /* === Tipografia === */
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* === Aliases (compatibilidade) === */
+  --primary: var(--color-primary);
+  --primary-hover: var(--color-primary-hover);
+  --primary-light: var(--color-primary-light);
+
+  --bg-app: var(--color-background);
+  --bg-surface: var(--color-surface);
+  --cor-fundo: var(--color-background);
+  --cor-card: var(--color-surface);
+
+  --text-primary: var(--color-text);
+  --text-secondary: var(--color-text-secondary);
+  --cor-texto: var(--color-text);
+  --cor-texto-secundario: var(--color-text-secondary);
+  --cor-texto-claro: var(--color-text-secondary);
+
+  --border-subtle: var(--color-border);
+  --cor-borda: #e2e8f0;
+  --cor-borda-light: #f1f5f9;
+
+  --sidebar-bg: var(--color-surface);
+  --sidebar-text: #1e293b;
+  --sidebar-text-muted: #64748b;
+  --sidebar-section: #64748b;
+  --sidebar-hover: rgba(59, 130, 246, 0.08);
+  --sidebar-active: rgba(59, 130, 246, 0.15);
+  --sidebar-active-text: var(--color-primary);
+  --sidebar-logo-bg: var(--color-primary);
+  --sidebar-footer-bg: #f8fafc;
+
+  --shadow-card: var(--shadow-sm);
+  --shadow-card-hover: var(--shadow-md);
+  --shadow-header: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --header-border: var(--color-border);
+
+  --table-header-bg: #f8fafc;
+  --table-row-hover: rgba(0, 0, 0, 0.02);
+  --table-border: rgba(0, 0, 0, 0.05);
+
+  --header-pill-bg: #f1f5f9;
+  --header-pill-hover: #e2e8f0;
+  --header-pill-border: rgba(0, 0, 0, 0.05);
+
+  --sidebar-largura: 260px;
+  --sidebar-largura-collapsed: 72px;
+  --header-altura: 60px;
+  --radius: var(--radius-md);
+  --radius-pill: 999px;
+}
+
+/* ============================================
+   Dark Mode
+   ============================================ */
+
+[data-theme="dark"] {
+  --color-background: #0b1220;
+  --color-surface: #111827;
+  --color-sidebar: #020617;
+
+  --color-text: #e5e7eb;
+  --color-text-secondary: #94a3b8;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  --primary: #60a5fa;
+  --primary-hover: #3b82f6;
+  --primary-light: rgba(59, 130, 246, 0.15);
+
+  --bg-app: var(--color-background);
+  --bg-surface: var(--color-surface);
+  --cor-fundo: var(--color-background);
+  --cor-card: var(--color-surface);
+
+  --text-primary: var(--color-text);
+  --text-secondary: var(--color-text-secondary);
+  --cor-texto: var(--color-text);
+  --cor-texto-secundario: var(--color-text-secondary);
+  --cor-texto-claro: var(--color-text-secondary);
+
+  --cor-borda: rgba(255, 255, 255, 0.12);
+  --cor-borda-light: rgba(255, 255, 255, 0.06);
+
+  --sidebar-bg: #1f2233;
+  --sidebar-text: #e5e7eb;
+  --sidebar-text-muted: #94a3b8;
+  --sidebar-section: #94a3b8;
+  --sidebar-hover: rgba(96, 165, 250, 0.1);
+  --sidebar-active: rgba(96, 165, 250, 0.2);
+  --sidebar-active-text: #93c5fd;
+  --sidebar-logo-bg: var(--color-primary);
+  --sidebar-footer-bg: #171a28;
+
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-header: 0 1px 0 rgba(255, 255, 255, 0.05);
+  --header-border: rgba(255, 255, 255, 0.08);
+
+  --table-header-bg: rgba(255, 255, 255, 0.03);
+  --table-row-hover: rgba(255, 255, 255, 0.04);
+  --table-border: rgba(255, 255, 255, 0.06);
+
+  --header-pill-bg: rgba(255, 255, 255, 0.06);
+  --header-pill-hover: rgba(255, 255, 255, 0.1);
+  --header-pill-border: rgba(255, 255, 255, 0.08);
+}
